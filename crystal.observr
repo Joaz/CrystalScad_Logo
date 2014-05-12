@@ -1,0 +1,13 @@
+
+system("./crystal.rb")
+watch( 'crystal.rb' )  {|md|
+   system("./crystal.rb")
+}
+
+watch( 'lib/(.*).rb' )  {|md|
+   system("./crystal.rb")
+}
+
+watch( 'lib/*/(.*).rb' )  {|md|
+   system("./crystal.rb")
+}
